@@ -1,0 +1,17 @@
+name: Branch Naming
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+jobs:
+  check-branch-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Branch Name
+        uses: deepakputhraya/action-branch-name@master
+        with:
+            allowed_prefixes: 'feature/'
