@@ -15,6 +15,3 @@ jobs:
         uses: deepakputhraya/action-branch-name@master
         with:
             allowed_prefixes: 'feature/'
-            ignore: 'master,develop'
-            min_length: 5
-            max_length: 20
