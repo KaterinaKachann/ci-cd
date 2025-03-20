@@ -1,0 +1,25 @@
+name: Branch Naming
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+jobs:
+  check-branch-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Branch Name
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const branchName = context.ref.replace('refs/heads/', '');
+            const regex = /^feature\/[\w.-]+$/;
+
+            if (!regex.test(branchName)) {
+              core.setFailed("Branch name does not match the required format: 'feature/<description>'");
+            } else {
+              console.log("Branch name is valid.");
+            }
