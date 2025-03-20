@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check Branch Name
-        uses: actions/github-script@v6
+        uses: deepakputhraya/action-branch-name@master
         with:
             allowed_prefixes: 'feature/'
             ignore: 'master,develop'
