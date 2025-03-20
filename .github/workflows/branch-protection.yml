@@ -14,12 +14,4 @@ jobs:
       - name: Check Branch Name
         uses: actions/github-script@v6
         with:
-          script: |
-            const branchName = context.payload.pull_request.head.ref;
-            const regex = /^feature\/[\w.-]+$/;
-
-            if (!regex.test(branchName)) {
-              core.setFailed("Branch name does not match the required format: 'feature/<description>'");
-            } else {
-              console.log("Branch name is valid.");
-            }
+           allowed_prefixes: 'feature/'
