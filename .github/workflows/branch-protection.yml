@@ -15,7 +15,7 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const branchName = context.ref.replace('refs/heads/', '');
+            const branchName = context.payload.pull_request.head.ref;
             const regex = /^feature\/[\w.-]+$/;
 
             if (!regex.test(branchName)) {
