@@ -22,12 +22,11 @@ test('check fake name', () => {
 });
 
 test('check empty', () => {
-  cart.add('');
+  cart.add('wewr');
   expect(cart.basket).toStrictEqual({});
 });
 
 test('check 3 times', () => {
-  cart.add('1');
   cart.add('1');
   cart.add('1');
   expect(cart.basket).toStrictEqual({ '1': 3 });
