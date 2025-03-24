@@ -7,7 +7,7 @@
 .footer {
   width: 100%;
   position: relative;
-  background-color: variables.$green-light;
+  background-color: variables.$green-dark;
   color: variables.$white-medium;
 }
 
@@ -30,5 +30,8 @@
 }
 
 .footer__item a {
+  text-decoration: underline;
   color: variables.$white-medium;
+  font-size: 18px;
+  font-weight: 800;
 }

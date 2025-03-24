@@ -586,7 +586,7 @@ h2 {
 }
 
 .nav__link {
-  color: #909090;
+  color: #000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -845,19 +845,19 @@ h2 {
 }
 
 .purchase-form__input::-webkit-input-placeholder {
-  color: #CDCDCD;
+  color: #000;
 }
 
 .purchase-form__input:-ms-input-placeholder {
-  color: #CDCDCD;
+  color: #000;
 }
 
 .purchase-form__input::-ms-input-placeholder {
-  color: #CDCDCD;
+  color: #000;
 }
 
 .purchase-form__input::placeholder {
-  color: #CDCDCD;
+  color: #000;
 }
 
 .purchase-form__error {
@@ -1004,7 +1004,7 @@ h2 {
   width: 140px;
   height: 40px;
   background-color: #FFFFFF;
-  color: #2F8569;
+  color: #194E3D;
   border-radius: 20px;
   border: 1px #2F8569 solid;
   -webkit-transition: 0.5s;
@@ -1086,7 +1086,7 @@ h2 {
   border: none;
   background: none;
   cursor: pointer;
-  color: #CDCDCD;
+  color: #000;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -1109,7 +1109,7 @@ h2 {
 }
 
 .link-navigation__link, .link-navigation__slash {
-  color: #CDCDCD;
+  color: #000;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -1164,10 +1164,11 @@ h2 {
   border-radius: 100%;
   width: 32px;
   height: 32px;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 900;
   line-height: 1;
-  background-color: #22795D;
-  color: #FFFFFF;
+  background-color: #1A5E49;
+  color: #000;
   position: relative;
   margin-bottom: 5px;
 }
@@ -1178,7 +1179,7 @@ h2 {
   right: -8px;
   font-size: 17px;
   font-weight: 900;
-  color: #89c1b0;
+  color: #186049;
 }
 
 .product__discount {
@@ -1200,7 +1201,7 @@ h2 {
 }
 
 .product__type {
-  color: #89c1b0;
+  color: #186049;
 }
 
 .product__title {
@@ -1302,6 +1303,7 @@ h2 {
   padding: 20px;
   background-size: contain;
   background-origin: content-box;
+  color: black
 }
 
 .cart-list .product__purchase {
@@ -1319,7 +1321,7 @@ h2 {
 
 .cart-list .product__old-price {
   font-size: 20px;
-  color: #CDCDCD;
+  color: #000;
   text-decoration: line-through;
 }
 
@@ -1456,22 +1458,22 @@ h2 {
 }
 
 .sort-input::-webkit-input-placeholder {
-  color: #CDCDCD;
+  color: #000;
   font-weight: 400;
 }
 
 .sort-input:-ms-input-placeholder {
-  color: #CDCDCD;
+  color: #000;
   font-weight: 400;
 }
 
 .sort-input::-ms-input-placeholder {
-  color: #CDCDCD;
+  color: #000;
   font-weight: 400;
 }
 
 .sort-input::placeholder {
-  color: #CDCDCD;
+  color: #000;
   font-weight: 400;
 }
 
@@ -1552,22 +1554,33 @@ h2 {
 .range__range-input input {
   position: absolute;
   width: 100%;
-  height: 6px;
+  height: 48px;
   top: -6px;
   background: none;
-  pointer-events: none;
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
 }
 
-.range input[type='range']::-webkit-slider-thumb {
-  height: 16px;
-  width: 16px;
-  border-radius: 8px;
-  background: #22795D;
-  pointer-events: auto;
+.range__range-input input[type='range'] {
+  position: absolute;
+  width: 100%;
+  height: 48px;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background: none;
+  -moz-appearance: none;
   -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.range input[type='range']::-webkit-slider-thumb {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: #22795D;
   cursor: pointer;
 }
 
@@ -1725,7 +1738,7 @@ h2 {
 }
 
 .full-cart-page__pagination-text {
-  color: #CDCDCD;
+  color: #000;
 }
 
 .amount-number {
@@ -1766,7 +1779,7 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #CDCDCD;
+  color: #000;
   border-radius: 100%;
   border: 0.5px #CDCDCD solid;
 }
@@ -1803,19 +1816,19 @@ h2 {
 }
 
 .full-cart-page__promo-input::-webkit-input-placeholder {
-  color: #CDCDCD;
+  color: #000;
 }
 
 .full-cart-page__promo-input:-ms-input-placeholder {
-  color: #CDCDCD;
+  color: #000;
 }
 
 .full-cart-page__promo-input::-ms-input-placeholder {
-  color: #CDCDCD;
+  color: #000;
 }
 
 .full-cart-page__promo-input::placeholder {
-  color: #CDCDCD;
+  color: #000;
 }
 
 .full-cart-page__promo-button {
@@ -1943,7 +1956,7 @@ h2.error-page__title {
 .error-page__text {
   margin: 30px 0px 50px;
   font-size: 24px;
-  color: #CDCDCD;
+  color: #000;
 }
 
 .error-page__btn {
@@ -2029,7 +2042,7 @@ h2.error-page__title {
 }
 
 .product-page__stoke-amount {
-  color: #CDCDCD;
+  color: #000;
 }
 
 .product-page__price-block {
@@ -2054,7 +2067,7 @@ h2.error-page__title {
 }
 
 .product-page__old-price {
-  color: #CDCDCD;
+  color: #000;
   font-size: large;
   text-decoration: line-through;
 }
@@ -2093,7 +2106,7 @@ h2.error-page__title {
 }
 
 .product-page__specification-name {
-  color: #CDCDCD;
+  color: #000;
   border-bottom: 1px #CDCDCD dotted;
 }
 

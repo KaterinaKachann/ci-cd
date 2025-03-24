@@ -111,7 +111,7 @@
 }
 
 .full-cart-page__pagination-text {
-  color: variables.$grey-medium;
+  color: variables.$black;
 }
 
 .amount-number {
@@ -150,7 +150,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: variables.$grey-medium;
+  color: variables.$black;
   border-radius: 100%;
   border: .5px variables.$grey-medium solid;
 }
@@ -191,7 +191,7 @@
   text-transform: uppercase;
 
   &::placeholder {
-    color: variables.$grey-medium;
+    color: variables.$black;
   }
 }
 
@@ -220,7 +220,7 @@
 }
 
 .full-cart-page__subtotal,
-.discounts__item { 
+.discounts__item {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px variables.$grey-medium dotted;

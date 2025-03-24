@@ -135,7 +135,8 @@
   }
 
   &__link {
-    color: variables.$grey-dark;
+    color: variables.$black;
+    font-size: 18px;
     transition: 0.5s;
 
     &:hover, &:active {
