@@ -1167,8 +1167,8 @@ h2 {
   font-size: 18px;
   font-weight: 900;
   line-height: 1;
-  background-color: #22795D;
-  color: #FFFFFF;
+  background-color: #1A5E49;
+  color: #000;
   position: relative;
   margin-bottom: 5px;
 }
@@ -1303,6 +1303,7 @@ h2 {
   padding: 20px;
   background-size: contain;
   background-origin: content-box;
+  color: black
 }
 
 .cart-list .product__purchase {
@@ -1553,22 +1554,33 @@ h2 {
 .range__range-input input {
   position: absolute;
   width: 100%;
-  height: 6px;
+  height: 48px;
   top: -6px;
   background: none;
-  pointer-events: none;
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
 }
 
-.range input[type='range']::-webkit-slider-thumb {
-  height: 16px;
-  width: 16px;
-  border-radius: 8px;
-  background: #22795D;
-  pointer-events: auto;
+.range__range-input input[type='range'] {
+  position: absolute;
+  width: 100%;
+  height: 48px;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background: none;
+  -moz-appearance: none;
   -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.range input[type='range']::-webkit-slider-thumb {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: #22795D;
   cursor: pointer;
 }
 
