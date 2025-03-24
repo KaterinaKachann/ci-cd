@@ -191,9 +191,29 @@
               <div class="slider__progress"></div>
             </div>
             <div class="range__range-input">
-              <input type="range" class="range-min" min="1" max="106" value="1" step="1">
-              <input type="range" class="range-max" min="1" max="100" value="100" step="1">
+              <label for="range-min" class="sr-only">Minimum price</label>
+              <input
+                type="range"
+                id="range-min"
+                class="range-min"
+                min="1"
+                max="106"
+                value="1"
+                step="1"
+              >
+
+              <label for="range-max" class="sr-only">Maximum price</label>
+              <input
+                type="range"
+                id="range-max"
+                class="range-max"
+                min="1"
+                max="100"
+                value="100"
+                step="1"
+              >
             </div>
+
           </div>
         </div>
 
@@ -209,12 +229,17 @@
           <h3 class="filter__title">Stock</h3>
           <div class="range">
             <div class="range__value">
+              <label for="input-min" class="sr-only">Minimum value</label>
               <span>min</span>
-              <input type="number" class="input-min" value="1" max="65">
+              <input type="number" id="input-min" class="input-min" value="1" max="65">
+
               <div class="range__separator">-</div>
+
+              <label for="input-max" class="sr-only">Maximum value</label>
               <span>max</span>
-              <input type="number" class="input-max" value="65" max="65">
+              <input type="number" id="input-max" class="input-max" value="65" max="65">
             </div>
+
             <div class="range__slider slider">
               <div class="slider__progress"></div>
             </div>
@@ -247,7 +272,13 @@
               </div>
             </div>
             <div class="found-products">Found: <div><span class="found-products__num">24</span><span class="found-products__num"> / 24</span></div></div>
-            <input type="text" placeholder="Search" class="sort-input">
+            <label for="search-input" class="sr-only">Search the catalog</label>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search"
+              class="sort-input"
+            />
           </div>
 
           <div class="products__layout layout">
@@ -364,15 +395,45 @@
                 <div class="full-cart-page__pagination-pages">
                   <span class="full-cart-page__pagination-text">Page</span>
                   <button class="button-arrow" id="paginationPageDown">&lt;</button>
-                  <input class="amount-number" id="paginationCurrentPage" type="number" min="1" max="10" value="1" disabled>
+
+                  <label for="paginationCurrentPage" class="sr-only">Current page number</label>
+                  <input
+                    class="amount-number"
+                    id="paginationCurrentPage"
+                    type="number"
+                    min="1"
+                    max="10"
+                    value="1"
+                    disabled
+                  >
+
                   <button class="button-arrow" id="paginationPageUp">&gt;</button>
                   <span class="full-cart-page__pagination-text">of</span>
-                  <input class="amount-number" id="pagination-max-pages" type="number" min="1" max="10" value="2" disabled>
+
+                  <label for="pagination-max-pages" class="sr-only">Total number of pages</label>
+                  <input
+                    class="amount-number"
+                    id="pagination-max-pages"
+                    type="number"
+                    min="1"
+                    max="10"
+                    value="2"
+                    disabled
+                  >
                 </div>
+
                 <div class="full-cart-page__pagination-items">
                   <span class="full-cart-page__pagination-text">Items on page:</span>
                   <button class="button-arrow" id="pagination-items-minus">&lt;</button>
-                  <input class="amount-number" id="pagination-items" type="text" disabled>
+
+                  <label for="pagination-items" class="sr-only">Items shown on page</label>
+                  <input
+                    class="amount-number"
+                    id="pagination-items"
+                    type="text"
+                    disabled
+                  >
+
                   <button class="button-arrow" id="pagination-items-plus">&gt;</button>
                 </div>
               </div>
