@@ -73,9 +73,11 @@
   margin: 0;
   color: variables.$white-medium;
   font-weight: 200;
+  font-size: 22px;
   line-height: 25px;
   text-decoration: none;
   padding-left: 5px;
+
 
   @media (max-width:600px) {
     font-size: 14px;
