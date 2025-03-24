@@ -94,12 +94,12 @@
 }
 
 .product-page__stoke-text {
-  color: variables.$green-light;
+  color: variables.$green-dark;
   font-weight: bold;
 }
 
 .product-page__stoke-amount {
-  color: variables.$grey-medium;
+  color: variables.$black;
 }
 
 .product-page__price-block {
@@ -110,7 +110,7 @@
 }
 
 .product-page__new-price {
-  color: variables.$green-light;
+  color: variables.$green-dark;
   font-weight: bold;
   font-size: xx-large;
 
@@ -121,7 +121,7 @@
 }
 
 .product-page__old-price {
-  color: variables.$grey-medium;
+  color: variables.$black;
   font-size: large;
   text-decoration: line-through;
 }
@@ -164,7 +164,7 @@
 }
 
 .product-page__specification-name {
-  color: variables.$grey-medium;
+  color: variables.$black;
   border-bottom: 1px variables.$grey-medium dotted;
 }
 
@@ -198,7 +198,7 @@
     transition: .3s;
     opacity: 0;
     box-shadow: variables.$shadow;
-    
+
 
     @media (max-width: 600px) {
       width: 300px;
